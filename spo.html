@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #121212, #1e1e1e);
+      color: #fff;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #1db954, #1ed760);
+      border-bottom: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32rem;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-size: 25px;
+    }
+
+    .navbar ul li a:hover {
+      color: #000;
+    }
+
+    .logo {
+      height: 200px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo video {
+      height: 100%;
+      width: auto;
+      display: block;
+      background: transparent;
+      overflow : hidden;
+    }
+
+    .main {
+      padding: 2rem;
+    }
+
+    h2 {
+      margin: 32px 0px 16px;
+      color: #1db954;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #2a2a2a, #1c1c1c);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: linear-gradient(145deg, #1db954, #1ed760);
+      color: #000;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer {
+      background: linear-gradient(90deg, #d3dfd7, #1ed760);
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 4rem;
+      color: #000;
+    }
+    
+    .audio {
+      width: 150px;
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      margin-left:-10px 
+    }
+
+    .audio audio {
+      width: 125%;
+      height:30px;
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Artists</a></li>
+      <li><a href="#">Albums</a></li>
+      <li><a href="#">Radio</a></li>
+      <li><a href="#">Charts</a></li>
+    </ul>
+  </nav>
+  <br>
+  <div class="main">
+    <h2>Trending Songs</h2>
+    <div class="grid">
+      <div class="card">
+          <img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/AgarTum.jpg">
+          <div class = "audio">
+            <audio controls>
+              <source src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/agartum.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+          <p>Agar Tum Saath Ho</p>
+      </div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/2Khatole.jpeg"><p>2 Khatole</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/finding her.jpeg"><p>Finding Her</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/maand.jpeg"><p>Maand</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/jhol.jpeg"><p>Jhol</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/pal pal.jpeg"><p>Pal Pal</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/aa seetadevi navvula.jpeg"><p>Aa Seetadevi Navvula</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/48rhymes.jpeg"><p>48 Rhymes</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/chal.jpeg"><p>CHAL</p></div>
+    </div>
+
+    <h2>Popular Artists</h2>
+    <div class="grid">
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/pritam.jpeg"><p>Pritam</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/arijitsingh.jpeg"><p>Arijit Singh</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/ar_rahman.jpeg"><p>A.R Rahman</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/sachin_jigar.jpeg"><p>Sachin-Jigar</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/vishal_shekhar.jpeg"><p>Vishal Shekhar</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/atif_aslam.jpeg"><p>Atif Aslam</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/amirukh_ravichander.jpeg"><p>Anirudh Ravichander</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/yoyohoneysingh.jpeg"><p>Yo Yo Honey Singh</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/uditnarayan.jpeg"><p>Udit Narayan</p></div>
+    </div>
+
+    <h2>Popular Albums</h2>
+    <div class="grid">
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/yeh jawaani hai deewani.jpeg"><p>Yeh Jawaani Hai Deewani</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/sanam teri kasam.jpeg"><p>Sanam Teri Kasam</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/young goat.jpeg"><p>Young Goat</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/aashiqui 2.jpeg"><p>Aashiqui 2</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/glory.jpeg"><p>Glory</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/raanjhan.jpeg"><p>Raanjhan</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/sanam teri kasam.jpeg"><p>Sanam Teri Kasam</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/arijitsingh.jpeg"><p>Ultimate Love Songs - Arijit Singh</p></div>
+      <div class="card"><img src = "https://raw.githubusercontent.com/ThomasOinam/Project11/main/folder/making memories.jpeg"><p>Making Memories</p></div>
+    </div>
+
+    <h2>Popular Radio</h2>
+    <div class="grid">
+      <div class="card"><p>Arijit Singh Radio</p></div>
+      <div class="card"><p>Shreya Ghoshal</p></div>
+      <div class="card"><p>Diljit Dosanjh</p></div>
+      <div class="card"><p>S.P Balasubrahmamyam</p></div>
+      <div class="card"><p>KK</p></div>
+      <div class="card"><p>Sidhu Moose Wala</p></div>
+      <div class="card"><p>Kumar Sanu</p></div>
+      <div class="card"><p>Yo Yo Honey Singh</p></div>
+      <div class="card"><p>Kishore Kumar</p></div>
+    </div>
+
+    <h2>Featured Charts</h2>
+    <div class="grid">
+      <div class="card"><p>Top Songs Global</p></div>
+      <div class="card"><p>Top Songs India</p></div>
+      <div class="card"><p>Top 50 Global</p></div>
+      <div class="card"><p>Viral 50 India</p></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Spotify Clone.<br>Created by Oinam Thomas Meitei<br> BCA Student<br>Roll no : BC2059 <br> NEILIT Imphal</p>
+  </footer>
+
+</body>
+</html>

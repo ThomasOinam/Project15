@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <title>Sign In</title>
+  <style>
+    body {
+    margin: 0;
+    background: linear-gradient(to right, rgb(179, 63, 251), rgb(70, 252, 194));
+    display: flex;
+    justify-content: center;
+  }
+
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.455);
+    border-radius: 5px;
+  }
+
+  .login-container{
+    background: rgb(164, 223, 223);
+    padding: 3rem;
+    border-radius: 40px;
+    border:2px solid rgb(128, 128, 128);
+    box-shadow: 5px 5px 20px 1px,rgba(49, 55, 231, 0.932);
+    text-align: center;
+    margin-top: 100px;
+    width: 350px;
+    font-size :25px;
+  }
+  
+  
+  button {
+    padding: 1rem 2rem;
+    background: #4c6ef5;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background:red;
+  }
+
+
+  input:invalid:not(:placeholder-shown){
+    border-color: red;
+    border-width: 2px;
+  }
+
+
+  input:valid:not(:placeholder-shown){
+    border-color: rgb(33, 210, 50);
+    border-width: 2px;
+  }
+
+
+  input:invalid+p{
+    color: rgb(236, 10, 10);
+  }
+
+
+  input:invalid~button[type="submit"]{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+
+  </style>
+</head>
+<body class="login-body">
+  <div class="login-container"><br><br>
+    <form action="spo.html" >
+      <label for="username"><i>Email</i></label>
+      <input type="email" id="username" required title="abc123@gmail.com">
+      <p style="font-size: small;">abc123@gmail.com</p>
+      <br><br>
+      <label for="password"><i>Password</i></label>
+      <input type="password" id="password" required minlength="6" title="Minimum 6 characters">
+      <p style="font-size: small;">Minimum 6 characters</p>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
